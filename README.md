@@ -1,14 +1,13 @@
-# _Super Battle Game_
+# _Super Galactic Age Calculator_
 
-#### _This is a RPG that will allow a person to battle their inner child. | Feb 5th. 2020_
+#### _This is a galactic age and life expectancy calculator | Feb 7th. 2020_
 
-#### By _**Alex Skreen & Dusty McCord**_
+#### By _**Alex Skreen**_
 [link to demo site coming](#)
 
 ## Description
 
-This was a Epicodus class project. It is an RPG that allows a user to create a character and battle another character. 
-It uses webpack and Jest testing. 
+This was a Epicodus class project. It is a program that takes in the user's age and determines their age on other planets. It also takes in basic demographic informationa about the user and tell them their life expectancy. The program uses this information to determine how many years left the user has on each planet, or how many years past their expectancy they have lived.
 
 ## Setup/Installation Requirements
 
@@ -56,15 +55,14 @@ npm run start
 
 Behavoir | Input | Output
 :---------|:------:|:------:
-|1 - The program allows a user to choose a Golden girl and will return a golden girl character | Pick Rose | Rose with standard properties. |
-|2 - The program will allow a user to allocate points to armor and health based on a total of 100 points. | 70 to HP, 30 to Armor | 70 to HP, 30 to Armor |
-|3 - The program will allow user 2 to select a character and allocate points. | Rose  + points | Rose + points |
-|4 - The program will allow user 1 to start their turn by drawing from inventory or holding current inventory | Draw | randomly selected new item |
-|5 - The program will allow user 1 to nap or attack | attack | attack user 2 |
-|6 - The program will allow a user to win or lose an attack based off of an advanced algorithm | Roll Dice | Win |
-|7 - If the user wins the HP score of the attacker will go down by 5 and the loser will go down by the attack total | attack 80 | User 1 (HP - 5), User 2 (HP - 80) |
-|8 - The program will allow user 2 to draw or hold | hold | hold |
-|9 - The program will allow user 2 to nap or attack. If nap the user heals |  nap | heal 5 HP |
+| 1 - The program allows a user to enter their age and then returns their relative age on different planets | Enter 31 | You are 31 earth years old |
+| 2 - The program will calculate how old you are in Mercurian years based off of your earth age | Enter 31 | You are 130 Mecury years old | 
+| 3 - The Program will calculate how old you are in Venusian years based off of your earth age | Enter 31 | You are 51 Venus years old | 
+| 4 - The Program will calculate how old you are in Mars years based off of your earth age | Enter 31 | You are 16 Martian years old |
+| 5 - The Program will calculate how old you are in Jupiter years based off of your earth age | Enter 31 | You are 2 Jovian years old |
+| 6 - The program will calculate the user's life expectency based off of their provided demographic information | User fills out form with questions about their demographic | Program returns their life expectancy |
+| 7 - The program will calculate the number of remaining years the user has on each planet based off of their current age and life expectancy | Enters 31 | Program returns x years |
+| 8 - The program will calculate the number of years the user has exceeded their life expectancy by on each planet based off of their current age and life expectancy | Enters 105 | You have outlived your life expectancy by 15 earth years |
 
 ## Support 
 
@@ -108,5 +106,5 @@ _The software is provided as is. It might work as expected - or not. Use at your
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-Copyright (c) 2020 **_Dusty McCord_**
+Copyright (c) 2020 **_Alex Skreen_**
 
