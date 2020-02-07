@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Super Battle Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- input form  -->
+      <div class="row">
+        <div class="col-md-6 offset-md-3 box-decore">
+          <h1 class="text-center">Super Battle Game</h1>
+          <div class="current-turn">
+            <h4 id="turn-name" class="text-center">It is <span id="current-user-name"></span>'s turn!</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="pick-golden-girl">
+          <div id="0" class="girl"><h2>Blanche Devereaux</h2>
+            <img src="https://i.pinimg.com/originals/bd/1e/54/bd1e5420b9645d2fed100c82922c6466.jpg" alt="">
+          </div>
+          <div id="1" class="girl">
+            <h2>Sophia Petrillo</h2>
+            <img src="https://vignette.wikia.nocookie.net/goldengirls/images/9/9e/Sophia1.jpg/revision/latest/top-crop/width/360/height/450?cb=20100305000442" alt="">
+          </div>
+          <div id="2" class="girl">
+            <h2>Dorothy Zbornak</h2>
+            <img src="https://vignette.wikia.nocookie.net/goldengirls/images/4/4e/Beaarthur_%281%29.jpg/revision/latest/top-crop/width/360/height/450?cb=20101208103602" alt="">
+          </div>
+          <div id="3" class="girl">
+            <h2>Rose Nylund</h2>
+            <img src="https://i.pinimg.com/236x/7a/5d/fe/7a5dfecd125de749c030e14bc59dc00e--the-golden-girls-golden-age.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <button id="start" class="btn btn-lg btn-success">Start</button>
+      </div>
+
+  
+      <!-- output box  -->
+      <div class="battle-board">
+
+        <div class="row ">
+          <div class="col-md-4">
+              <h3 id="user1-title">Rose</h3>
+              <img id="user1-img" src="http://unsplash.it/200/300" alt="">
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-center">VS</h3>
+            <div class="draw-hold">
+              <button name="draw" class="btn btn-success btn-block">Draw</button>
+              <button name="hold" class="btn btn-warning btn-block">Hold</button>
+            </div>
+            <div class="attack-hold">
+              <button name="attack" class="btn btn-danger btn-block">Attack</button>
+              <button name="hold" class="btn btn-warning btn-block">Hold</button>
+            </div>
+            <div class="turn-alert"><h4>
+              <span id="active-user"></span> hit <span id="inactive-user"></span> for <span id="attack-hp"></span> points.
+            </h4>
+            <img src="https://fanboygaming.com/wp-content/uploads/2013/03/old-lady-with-cane.jpg" alt="">
+            </div>
+            <div class="fail"> <h4> <span id="this-player"></span> Missed</h4> <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F951985126%2F960x0.jpg%3Ffit%3Dscale" alt=""> </div>
+          </div>
+          <div class="col-md-4">  
+            <h3 id="user2-title">Rose</h3>
+            <img id="user2-img" src="http://unsplash.it/200/300" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>HP :<span id="user1-hp">0</span></h4>
+            <h4>Armor :<span id="user1-armor">0</span></h4>
+            <h4>inventory :<span id="user1-inventory">0</span></h4>
+            
+          </div>
+          <div class="col-md-4 offset-md-4">
+              <h4>HP :<span id="user2-hp">0</span></h4>
+              <h4>Armor :<span id="user2-armor">0</span></h4>
+              <h4>inventory :<span id="user2-inventory">0</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
